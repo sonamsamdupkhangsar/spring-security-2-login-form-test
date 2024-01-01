@@ -1,0 +1,130 @@
+2024-01-01T09:07:10.998-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [POST /regular/login HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Content-Length: 32
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:9090
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:9090/regular/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: JSESSIONID=26602768BF22BAD9089A2953086AEA7E
+
+username=user2&password=password]
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: JSESSIONID=26602768BF22BAD9089A2953086AEA7E
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.catalina.connector.CoyoteAdapter     :  Requested cookie session id is 26602768BF22BAD9089A2953086AEA7E
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.c.authenticator.AuthenticatorBase    : Security checking request POST /regular/login
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-01-01T09:07:11.000-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.apache.catalina.core.StandardWrapper   :   Returning instance
+2024-01-01T09:07:11.001-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.b.w.s.f.OrderedRequestContextFilter  : Bound request context to thread: org.apache.catalina.connector.RequestFacade@398f311e
+2024-01-01T09:07:11.001-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=Or [Mvc [pattern='/special/**']], Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@129c4d19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11810917, org.springframework.security.web.context.SecurityContextHolderFilter@78b03788, org.springframework.security.web.header.HeaderWriterFilter@236c098, org.springframework.security.web.authentication.logout.LogoutFilter@6650a6c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fbf5db2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@571a663c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@175c5c3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13278a41, org.springframework.security.web.session.SessionManagementFilter@120aa40b, org.springframework.security.web.access.ExceptionTranslationFilter@39c87b42, org.springframework.security.web.access.intercept.AuthorizationFilter@79252c83]] (1/3)
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/login"]] and 3 interceptors
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/h2-console/**'], Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@6aae0e6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37775bb1, org.springframework.security.web.context.SecurityContextHolderFilter@124eb83d, org.springframework.security.web.header.HeaderWriterFilter@545d2560, org.springframework.security.web.csrf.CsrfFilter@5c448ef, org.springframework.security.web.authentication.logout.LogoutFilter@4a22e4d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6885ed19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10817f46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b9e25bd, org.springframework.security.web.access.ExceptionTranslationFilter@50e5032c, org.springframework.security.web.access.intercept.AuthorizationFilter@16681017]] (2/3)
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        :  Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@39652a30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5763a655, org.springframework.security.web.context.SecurityContextHolderFilter@7841bd30, org.springframework.security.web.header.HeaderWriterFilter@1c6a0103, org.springframework.security.web.authentication.logout.LogoutFilter@42a0786f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78c74647, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45c80312, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bd38fed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40c8067, org.springframework.security.web.access.ExceptionTranslationFilter@6aea99e7, org.springframework.security.web.access.intercept.AuthorizationFilter@203e705e]] (3/3)
+2024-01-01T09:07:11.002-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /regular/login
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-01-01T09:07:11.002-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-01-01T09:07:11.003-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-01-01T09:07:11.003-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-01-01T09:07:11.003-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/regular/logout', GET], Ant [pattern='/regular/logout', POST], Ant [pattern='/regular/logout', PUT], Ant [pattern='/regular/logout', DELETE]]
+2024-01-01T09:07:11.003-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (6/11)
+2024-01-01T09:07:11.003-07:00 DEBUG 14905 --- [nio-9090-exec-7] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2024-01-01T09:07:11.003-07:00 DEBUG 14905 --- [nio-9090-exec-7] org.apache.tomcat.util.http.Parameters   : Start processing with input [username=user2&password=password]
+2024-01-01T09:07:11.003-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.s.authentication.ProviderManager     : Authenticating request with DaoAuthenticationProvider (1/1)
+2024-01-01T09:07:11.081-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-01-01T09:07:11.081-07:00 TRACE 14905 --- [nio-9090-exec-7] s.CompositeSessionAuthenticationStrategy : Preparing session with ChangeSessionIdAuthenticationStrategy (1/1)
+2024-01-01T09:07:11.081-07:00 DEBUG 14905 --- [nio-9090-exec-7] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from 26602768BF22BAD9089A2953086AEA7E
+2024-01-01T09:07:11.084-07:00 DEBUG 14905 --- [nio-9090-exec-7] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=26602768BF22BAD9089A2953086AEA7E], Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@3fd46d62]
+2024-01-01T09:07:11.084-07:00 DEBUG 14905 --- [nio-9090-exec-7] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=26602768BF22BAD9089A2953086AEA7E], Granted Authorities=[ROLE_ADMIN]]
+2024-01-01T09:07:11.084-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:9090/regular/home?continue
+2024-01-01T09:07:11.084-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-01-01T09:07:11.084-07:00 TRACE 14905 --- [nio-9090-exec-7] o.s.b.w.s.f.OrderedRequestContextFilter  : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@398f311e
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [908]
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]], Read from buffer: [0]
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]], Read direct from socket: [0]
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]], Status in: [OPEN_READ], State out: [OPEN]
+2024-01-01T09:07:11.085-07:00 DEBUG 14905 --- [nio-9090-exec-7] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]]
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [908]
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]], Read from buffer: [0]
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@718c7b24:org.apache.tomcat.util.net.NioChannel@2d78ae63:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:9090 remote=/[0:0:0:0:0:0:0:1]:63155]], Read direct from socket: [815]
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /regular/home?continue HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: "Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Referer: http://localhost:9090/regular/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: JSESSIONID=3A055F05A2E9F31C2164967CC2A7B3D3
+
+]
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: JSESSIONID=3A055F05A2E9F31C2164967CC2A7B3D3
+2024-01-01T09:07:11.087-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.catalina.connector.CoyoteAdapter     :  Requested cookie session id is 3A055F05A2E9F31C2164967CC2A7B3D3
+2024-01-01T09:07:11.088-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /regular/home
+2024-01-01T09:07:11.088-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-01-01T09:07:11.088-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-01-01T09:07:11.088-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.apache.catalina.core.StandardWrapper   :   Returning instance
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.b.w.s.f.OrderedRequestContextFilter  : Bound request context to thread: org.apache.catalina.connector.RequestFacade@54746ed
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=Or [Mvc [pattern='/special/**']], Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@129c4d19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11810917, org.springframework.security.web.context.SecurityContextHolderFilter@78b03788, org.springframework.security.web.header.HeaderWriterFilter@236c098, org.springframework.security.web.authentication.logout.LogoutFilter@6650a6c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fbf5db2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@571a663c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@175c5c3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13278a41, org.springframework.security.web.session.SessionManagementFilter@120aa40b, org.springframework.security.web.access.ExceptionTranslationFilter@39c87b42, org.springframework.security.web.access.intercept.AuthorizationFilter@79252c83]] (1/3)
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/h2-console/**'], Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@6aae0e6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37775bb1, org.springframework.security.web.context.SecurityContextHolderFilter@124eb83d, org.springframework.security.web.header.HeaderWriterFilter@545d2560, org.springframework.security.web.csrf.CsrfFilter@5c448ef, org.springframework.security.web.authentication.logout.LogoutFilter@4a22e4d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6885ed19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10817f46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b9e25bd, org.springframework.security.web.access.ExceptionTranslationFilter@50e5032c, org.springframework.security.web.access.intercept.AuthorizationFilter@16681017]] (2/3)
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@39652a30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5763a655, org.springframework.security.web.context.SecurityContextHolderFilter@7841bd30, org.springframework.security.web.header.HeaderWriterFilter@1c6a0103, org.springframework.security.web.authentication.logout.LogoutFilter@42a0786f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78c74647, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45c80312, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bd38fed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40c8067, org.springframework.security.web.access.ExceptionTranslationFilter@6aea99e7, org.springframework.security.web.access.intercept.AuthorizationFilter@203e705e]] (3/3)
+2024-01-01T09:07:11.088-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /regular/home?continue
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/11)
+2024-01-01T09:07:11.088-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/11)
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/11)
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/11)
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/11)
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/regular/logout', GET], Ant [pattern='/regular/logout', POST], Ant [pattern='/regular/logout', PUT], Ant [pattern='/regular/logout', DELETE]]
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (6/11)
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/regular/login', POST]
+2024-01-01T09:07:11.089-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/11)
+2024-01-01T09:07:11.089-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2024-01-01T09:07:11.089-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.tomcat.util.http.Parameters   : Decoding query null UTF-8
+2024-01-01T09:07:11.089-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.tomcat.util.http.Parameters   : Start processing with input [continue]
+2024-01-01T09:07:11.089-07:00 DEBUG 14905 --- [nio-9090-exec-8] org.apache.tomcat.util.http.Parameters   : Parameter starting at position [0] and ending at position [8] with a value of [continue] was not followed by an '=' character
+2024-01-01T09:07:11.090-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.s.w.s.HttpSessionRequestCache        : Removing DefaultSavedRequest from session if present
+2024-01-01T09:07:11.090-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:9090/regular/home?continue
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/11)
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/11)
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (10/11)
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (11/11)
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.savedrequest.SavedRequestAwareWrapper@6a7a2614]
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.savedrequest.SavedRequestAwareWrapper@6a7a2614] using org.springframework.security.authorization.AuthenticatedAuthorizationManager@237af581
+2024-01-01T09:07:11.091-07:00 TRACE 14905 --- [nio-9090-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=26602768BF22BAD9089A2953086AEA7E], Granted Authorities=[ROLE_ADMIN]]] from SPRING_SECURITY_CONTEXT
+2024-01-01T09:07:11.092-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=26602768BF22BAD9089A2953086AEA7E], Granted Authorities=[ROLE_ADMIN]]
+2024-01-01T09:07:11.092-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /regular/home?continue
+2024-01-01T09:07:11.092-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/regular/home?continue", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-01-01T09:07:11.092-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ParameterizableViewController [view="regular/home"]] and 3 interceptors
+2024-01-01T09:07:11.092-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.m.ParameterizableViewController  : Applying default cacheSeconds=-1
+2024-01-01T09:07:11.093-07:00 TRACE 14905 --- [nio-9090-exec-8] o.t.spring6.view.ThymeleafViewResolver   : View with key [regular/home_en_US] served from cache
+2024-01-01T09:07:11.093-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [regular/home] served from cache
+2024-01-01T09:07:11.093-07:00 DEBUG 14905 --- [nio-9090-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-01-01T09:07:11.093-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring6.view.ThymeleafView@250c0d8d]
+2024-01-01T09:07:11.093-07:00 TRACE 14905 --- [nio-9090-exec-8] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestDataValueProcessor'
